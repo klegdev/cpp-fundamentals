@@ -1,28 +1,20 @@
 #pragma once
 #include <string>
 
-std::string calculate(const std::string& command, int first, int second) 
-{
-    if(command == "add")
-    {
-        int result = first + second; 
+std::string calculate(const std::string& command, int first, int second) {
+    if (command == "add") {
+        int result = first + second;
         return std::to_string(result);
-    }
-    else if(command == "subtract")
-    {
-        int result = first - second; 
+    } else if (command == "subtract") {
+        int result = first - second;
         return std::to_string(result);
-    }
-    else if(command == "multiply")
-    {
-        int result = first * second; 
+    } else if (command == "multiply") {
+        int result = first * second;
         return std::to_string(result);
-    }
-    else if(command == "divide")
-    {
-        if(second == 0)
+    } else if (command == "divide") {
+        if (second == 0)
             return "Division by 0";
-        int result = first / second; 
+        int result = first / second;
         return std::to_string(result);
     }
     return "Invalid data";
