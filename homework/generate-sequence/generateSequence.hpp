@@ -2,7 +2,7 @@
 #include <vector>
 
 std::vector<int> generateSequence(int count, int step) {
-    if(count <= 0)
+    if (count <= 0)
         return std::vector<int>{};
     int sum = step;
     std::vector<int> sequence = {sum};
